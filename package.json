@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "gatsby": "^2.24.85",
+    "gatsby-cli": "^2.12.113",
     "gatsby-plugin-anchor-links": "^1.1.1",
     "gatsby-plugin-sharp": "^2.6.43",
     "gatsby-prismjs-dracula": "^0.1.15",
