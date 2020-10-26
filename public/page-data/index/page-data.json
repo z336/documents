@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-pages-index-js","path":"/","result":{"pageContext":{}},"staticQueryHashes":["1965388262"]}
+{"componentChunkName":"component---src-templates-article-js","path":"/","result":{"data":{"markdownRemark":{"html":"<p>Copy goes here.</p>","frontmatter":{"date":"October 26, 2020","path":"/","title":"Welcome to Documentation","description":"This is the home page","category":"Home"}}},"pageContext":{}},"staticQueryHashes":["1965388262"]}
