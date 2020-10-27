@@ -6,4 +6,4 @@ description: "This is the home page"
 category: "Home"
 ---
 
-Copy goes here.
+Hello

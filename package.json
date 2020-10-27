@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "Documents",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "A simple documentation site",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
@@ -17,6 +17,7 @@
     "gatsby": "^2.24.85",
     "gatsby-cli": "^2.12.113",
     "gatsby-plugin-anchor-links": "^1.1.1",
+    "gatsby-plugin-netlify-cms": "^4.3.17",
     "gatsby-plugin-sharp": "^2.6.43",
     "gatsby-prismjs-dracula": "^0.1.15",
     "gatsby-remark-images": "^3.3.39",
@@ -25,6 +26,7 @@
     "gatsby-remark-smartypants": "^2.3.13",
     "gatsby-source-filesystem": "^2.3.35",
     "gatsby-transformer-remark": "^2.8.46",
+    "netlify-cms-app": "^2.13.1",
     "prismjs": "^1.22.0",
     "react": "^16.12.0",
     "react-collapsible": "^2.8.1",

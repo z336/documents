@@ -3,11 +3,14 @@ import { graphql } from "gatsby";
 import { ContentContainer, ContentStyles } from "../styles/ContentStyles";
 
 export default function Index({ data }) {
-  const { edges: content } = data.allMarkdownRemark;
+  const { markdownRemark: content } = data;
   return (
     <>
       <ContentContainer>
-        <ContentStyles>{content.html}</ContentStyles>
+        <h1>{content.frontmatter.title}</h1>
+        <ContentStyles
+          dangerouslySetInnerHTML={{ __html: content.html }}
+        ></ContentStyles>
       </ContentContainer>
     </>
   );
@@ -15,11 +18,14 @@ export default function Index({ data }) {
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(filter: { frontmatter: { category: { eq: "Home" } } }) {
-      edges {
-        node {
-          html
-        }
+    markdownRemark(html: {}, frontmatter: { category: { eq: "Home" } }) {
+      html
+      frontmatter {
+        date(formatString: "MMMM DD, YYYY")
+        path
+        title
+        description
+        category
       }
     }
   }

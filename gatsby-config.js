@@ -12,6 +12,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-remark-smartypants`,
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-anchor-links`,
     `gatsby-plugin-sharp`,
     {
