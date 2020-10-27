@@ -39,7 +39,7 @@ const ExternalLinks = () => {
         <ul>
           <li>
             <a
-              href="https://bloomerang.freshdesk.com/support/home"
+              href="https://google.com"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -48,7 +48,7 @@ const ExternalLinks = () => {
           </li>
           <li>
             <a
-              href="https://bloomerang.freshdesk.com/login/normal"
+              href="https://google.com"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -57,7 +57,7 @@ const ExternalLinks = () => {
           </li>
           <li>
             <a
-              href="https://zeroheight.com/14185140d/p/63b59a-pongo"
+              href="https://google.com"
               target="_blank"
               rel="noopener noreferrer"
             >
