@@ -26,7 +26,7 @@
 - Javascript basics, array methods, template literals 
 
 ### CSS
-- Modern CSS fundamentals for styling the site
+- Modern CSS methods for styling the site
 - Implementing CSS in React, using Styled Components (CSS in JS)
 
 ### Git
