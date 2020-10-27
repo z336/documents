@@ -14,6 +14,7 @@ module.exports = {
     `gatsby-remark-smartypants`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-anchor-links`,
+    `babel-plugin-styled-components`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
