@@ -38,7 +38,7 @@
 - zsh/bash basics for working with projects
 
 ### Debugging
-- Basic drubbing steps
+- Basic debugging steps
 - Efficient research to understand and solve issues
 
 ### Visual Studio Code
