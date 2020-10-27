@@ -1,5 +1,5 @@
 # documents
-<hr>
+
 ## Skills used when building and deploying a Gatsby site to Netlify:
 
 ### Gatsby
