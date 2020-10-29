@@ -65,43 +65,47 @@ const Menu = () => {
 
   const { edges: articles } = data.allMarkdownRemark;
 
+  const first = articles.filter(
+    article => article.node.frontmatter.category === "First"
+  );
+
+  const second = articles.filter(
+    article => article.node.frontmatter.category === "Second"
+  );
+
   return (
     <MenuContainer>
       <MenuItems>
         <Collapsible trigger={<h2>First</h2>} transitionTime={50}>
           <ul>
-            {articles
-              .filter(article => article.node.frontmatter.category === "First")
-              .map(({ node: article }) => {
-                return (
-                  <li key={article.id}>
-                    <Link
-                      to={article.frontmatter.path}
-                      activeClassName="is-active"
-                    >
-                      {article.frontmatter.title}
-                    </Link>
-                  </li>
-                );
-              })}
+            {first.map(({ node: article }) => {
+              return (
+                <li key={article.id}>
+                  <Link
+                    to={article.frontmatter.path}
+                    activeClassName="is-active"
+                  >
+                    {article.frontmatter.title}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </Collapsible>
         <Collapsible trigger={<h2>Second</h2>} transitionTime={50}>
           <ul>
-            {articles
-              .filter(article => article.node.frontmatter.category === "Second")
-              .map(({ node: article }) => {
-                return (
-                  <li key={article.id}>
-                    <Link
-                      to={article.frontmatter.path}
-                      activeClassName="is-active"
-                    >
-                      {article.frontmatter.title}
-                    </Link>
-                  </li>
-                );
-              })}
+            {second.map(({ node: article }) => {
+              return (
+                <li key={article.id}>
+                  <Link
+                    to={article.frontmatter.path}
+                    activeClassName="is-active"
+                  >
+                    {article.frontmatter.title}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </Collapsible>
       </MenuItems>
