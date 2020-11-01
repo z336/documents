@@ -6,5 +6,3 @@ description: testing
 category: First
 ---
 testing
-
-![fire]( "Fire")
