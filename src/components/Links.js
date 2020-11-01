@@ -43,7 +43,7 @@ const ExternalLinks = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Knowledgebase
+              Link One
             </a>
           </li>
           <li>
@@ -52,7 +52,7 @@ const ExternalLinks = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Freshdesk Login
+              Link Two
             </a>
           </li>
           <li>
@@ -61,7 +61,7 @@ const ExternalLinks = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Pongo
+              Link Three
             </a>
           </li>
         </ul>

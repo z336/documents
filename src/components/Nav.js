@@ -17,10 +17,9 @@ const NavStyles = styled.div`
       text-decoration: none;
     }
   }
-  p {
+  h1 {
     padding-left: 2rem;
-    font-size: 3rem;
-    line-height: 1rem;
+    margin-top: 2rem;
   }
 `;
 
@@ -28,7 +27,7 @@ export default function Nav() {
   return (
     <NavStyles>
       <Link to="/">
-        <p>Documentation</p>
+        <h1>Documentation</h1>
       </Link>
     </NavStyles>
   );
