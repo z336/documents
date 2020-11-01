@@ -1,7 +1,5 @@
-import React from "react";
-import Layout from "./src/components/Layout";
+import "./src/styles/globalstyles.css";
+import "./src/styles/typography.css";
+import "./src/assets/fonts/Quicksand-VariableFont_wght.ttf";
+import "normalize.css";
 import "gatsby-prismjs-dracula";
-
-export function wrapPageElement({ element, props }) {
-  return <Layout {...props}>{element}</Layout>;
-}
