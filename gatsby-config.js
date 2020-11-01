@@ -15,7 +15,6 @@ module.exports = {
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-anchor-links`,
     `babel-plugin-styled-components`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -109,6 +108,8 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
