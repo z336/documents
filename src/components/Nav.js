@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 import styled from "styled-components";
 
 const NavStyles = styled.div`
+  display: flex;
   background: var(--dark);
   color: var(--white);
   height: 7rem;
@@ -25,10 +26,12 @@ const NavStyles = styled.div`
 
 export default function Nav() {
   return (
-    <NavStyles>
-      <Link to="/">
-        <h1>Documentation</h1>
-      </Link>
-    </NavStyles>
+    <>
+      <NavStyles>
+        <Link to="/">
+          <h1>Documentation</h1>
+        </Link>
+      </NavStyles>
+    </>
   );
 }
