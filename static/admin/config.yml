@@ -10,10 +10,12 @@ collections:
     label: "Articles"
     folder: "src/content/articles"
     create: true
+    media_folder: ""
+    public_folder: ""
     # slug: "index"
     # path: "{{title}}/index"
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Path", name: "path", widget: "string" }
