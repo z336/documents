@@ -4,8 +4,8 @@ import Collapsible from "react-collapsible";
 import styled from "styled-components";
 
 const MenuContainer = styled.div`
-  background: var(--midnight);
-  color: var(--snow);
+  background: var(--mid);
+  color: var(--white);
   margin-top: 7rem;
   @media (min-width: 800px) {
     height: 100vh;
@@ -20,19 +20,19 @@ const MenuContainer = styled.div`
 const MenuItems = styled.div`
   padding: 2rem;
   a.is-active {
-    color: var(--lime);
+    color: var(--bright);
   }
   a,
   h2 {
-    color: var(--snow);
+    color: var(--white);
     transition: color 0.2s ease-out 0s;
     &:hover {
-      color: var(--lime);
+      color: var(--bright);
       cursor: pointer;
     }
   }
   ul {
-    border-left: 1px solid var(--snow);
+    border-left: 1px solid var(--white);
   }
   li {
     list-style: none;

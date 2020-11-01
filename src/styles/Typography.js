@@ -17,7 +17,7 @@ const Typography = createGlobalStyle`
 
   html {
     font-family: RobotoSlab, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: var(--blackbird);
+    color: var(--dark);
   }
 
   h1 {
@@ -32,10 +32,10 @@ const Typography = createGlobalStyle`
   }
 
   a {
-    color: var(--mid-mobu);
+    color: var(--dark);
     text-decoration: none;
     &:hover {
-        color: var(--heavy-mobu);
+        color: var(--hover);
     }
   }
 `;

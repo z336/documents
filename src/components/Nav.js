@@ -3,8 +3,8 @@ import { Link } from "gatsby";
 import styled from "styled-components";
 
 const NavStyles = styled.div`
-  background: var(--blackbird);
-  color: var(--snow);
+  background: var(--dark);
+  color: var(--white);
   height: 7rem;
   position: fixed;
   z-index: 1;
@@ -12,7 +12,7 @@ const NavStyles = styled.div`
   left: 0;
   right: 0;
   a {
-    color: var(--snow);
+    color: var(--white);
     &:hover {
       text-decoration: none;
     }

@@ -23,11 +23,7 @@ const LinksItems = styled.div`
     list-style: none;
   }
   a {
-    color: var(--mobu);
     transition: color 0.2s ease-out 0s;
-    &:hover {
-      color: var(--heavy-mobu);
-    }
   }
 `;
 
