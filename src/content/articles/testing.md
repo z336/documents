@@ -7,6 +7,4 @@ category: First
 ---
 testing
 
-
-
-![fire](/img/fire.jpg "Fire")
+![fire]( "Fire")
