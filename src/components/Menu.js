@@ -17,7 +17,9 @@ const MenuContainer = styled.div`
   }
 `;
 
-const MenuItems = styled.div`
+const MenuItems = styled.ul`
+  display: flex;
+  flex-direction: column;
   padding: 2rem;
   a.is-active {
     color: var(--bright);
@@ -31,12 +33,12 @@ const MenuItems = styled.div`
       cursor: pointer;
     }
   }
-  ul {
-    border-left: 1px solid var(--white);
-  }
   li {
     list-style: none;
-    padding: 0.5rem 0;
+    padding-bottom: 1rem;
+  }
+  ul > li:first-child {
+    padding-top: 2rem;
   }
   @media (min-width: 800px) {
     padding-top: 5rem;
@@ -76,38 +78,42 @@ const Menu = () => {
   return (
     <MenuContainer>
       <MenuItems>
-        <Collapsible trigger={<h2>First</h2>} transitionTime={50}>
-          <ul>
-            {first.map(({ node: article }) => {
-              return (
-                <li key={article.id}>
-                  <Link
-                    to={article.frontmatter.path}
-                    activeClassName="is-active"
-                  >
-                    {article.frontmatter.title}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-        </Collapsible>
-        <Collapsible trigger={<h2>Second</h2>} transitionTime={50}>
-          <ul>
-            {second.map(({ node: article }) => {
-              return (
-                <li key={article.id}>
-                  <Link
-                    to={article.frontmatter.path}
-                    activeClassName="is-active"
-                  >
-                    {article.frontmatter.title}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-        </Collapsible>
+        <li>
+          <Collapsible trigger={<h2>First</h2>} transitionTime={50}>
+            <ul>
+              {first.map(({ node: article }) => {
+                return (
+                  <li key={article.id}>
+                    <Link
+                      to={article.frontmatter.path}
+                      activeClassName="is-active"
+                    >
+                      {article.frontmatter.title}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </Collapsible>
+        </li>
+        <li>
+          <Collapsible trigger={<h2>Second</h2>} transitionTime={50}>
+            <ul>
+              {second.map(({ node: article }) => {
+                return (
+                  <li key={article.id}>
+                    <Link
+                      to={article.frontmatter.path}
+                      activeClassName="is-active"
+                    >
+                      {article.frontmatter.title}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </Collapsible>
+        </li>
       </MenuItems>
     </MenuContainer>
   );
