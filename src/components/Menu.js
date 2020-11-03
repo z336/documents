@@ -15,7 +15,7 @@ const MenuContainer = styled.div`
   left: 0;
   @media (max-width: 800px) {
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
-    transition: 1s;
+    transition: 0.25s ease-in-out;
     width: 75vw;
   }
 `;
