@@ -60,7 +60,7 @@ export default function Nav({ open, setOpen }) {
   return (
     <>
       <NavStyles>
-        <Link to="/">
+        <Link to="/" onClick={() => setOpen(!open)}>
           <h1>Documentation</h1>
         </Link>
         <MobileButton open={open} onClick={() => setOpen(!open)}>
