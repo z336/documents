@@ -7,13 +7,16 @@ const MenuContainer = styled.div`
   background: var(--mid);
   color: var(--white);
   margin-top: 7rem;
-  @media (min-width: 800px) {
-    height: 100vh;
-    width: 30rem;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
+  height: 100vh;
+  width: 30rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  @media (max-width: 800px) {
+    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
+    transition: 1s;
+    width: 75vw;
   }
 `;
 
@@ -45,7 +48,7 @@ const MenuItems = styled.ul`
   }
 `;
 
-const Menu = () => {
+const Menu = ({ open, setOpen }) => {
   const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark(sort: { fields: [frontmatter___date] }) {
@@ -76,7 +79,7 @@ const Menu = () => {
   );
 
   return (
-    <MenuContainer>
+    <MenuContainer open={open}>
       <MenuItems>
         <li>
           <Collapsible trigger={<h2>First</h2>} transitionTime={50}>
@@ -87,6 +90,7 @@ const Menu = () => {
                     <Link
                       to={article.frontmatter.path}
                       activeClassName="is-active"
+                      onClick={() => setOpen(!open)}
                     >
                       {article.frontmatter.title}
                     </Link>
@@ -105,6 +109,7 @@ const Menu = () => {
                     <Link
                       to={article.frontmatter.path}
                       activeClassName="is-active"
+                      onClick={() => setOpen(!open)}
                     >
                       {article.frontmatter.title}
                     </Link>
