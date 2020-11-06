@@ -28,3 +28,25 @@ collections:
           options: ["First", "Second"],
         }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "home"
+    label: "Home"
+    folder: "src/content/home"
+    create: true
+    slug: "index"
+    media_folder: ""
+    public_folder: ""
+    path: "{{title}}/index"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Path", name: "path", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "string" }
+      - {
+          label: "Category",
+          name: "category",
+          widget: "select",
+          options: ["home"],
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
