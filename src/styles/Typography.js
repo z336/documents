@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 import fontHeader from "../assets/fonts/WorkSans-VariableFont_wght.ttf";
-import fontBody from "../assets/fonts/RobotoSlab-VariableFont_wght.ttf";
+import fontBody from "../assets/fonts/Inconsolata-VariableFont_wdth,wght.ttf";
 
 const Typography = createGlobalStyle`
   @font-face {
@@ -11,13 +11,13 @@ const Typography = createGlobalStyle`
   }
 
   @font-face {
-    font-family: RobotoSlab;
+    font-family: Inconsolata;
     src: url(${fontBody});
   }
 
   html {
-    font-family: RobotoSlab, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: var(--dark);
+    font-family: Inconsolata, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--white);
   }
 
   h1 {
@@ -32,12 +32,18 @@ const Typography = createGlobalStyle`
   }
 
   a {
-    color: var(--dark);
+    color: var(--link);
     text-decoration: none;
     &:hover {
         color: var(--hover);
     }
   }
+
+  p {
+    margin: 3rem 0;
+    line-height: 1.5;
+  }
+
 `;
 
 export default Typography;

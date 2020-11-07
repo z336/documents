@@ -4,7 +4,6 @@ import GlobalStyles from "../styles/GlobalStyles";
 import Typography from "../styles/Typography";
 import Nav from "./Nav";
 import Menu from "./Menu";
-import ExternalLinks from "./Links";
 import useOnClickOutside from "../utils/useOnClickOutside";
 
 export default function Layout({ children }) {
@@ -20,7 +19,6 @@ export default function Layout({ children }) {
         <Nav open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen} />
       </div>
-      <ExternalLinks />
       {children}
     </>
   );

@@ -16,6 +16,8 @@ This is an example of how articles might look.
 
 This is a paragraph.
 
+Here's a link [Duck Duck Go](https://duckduckgo.com).
+
 This line breaks because there are two spaces  
 after "spaces".
 

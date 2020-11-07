@@ -2,12 +2,13 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 :root {
-    --dark: #191919;
-    --mid: #323232;
-    --light: #f2f2f2;
+    --dark: #000000;
+    --mid: #191919;
+    --light: #212424;
     --bright: #f7f914;
     --white: #FFFFFF;
-    --hover: #666666;
+    --link: #51FA7B;
+    --hover: #ff79c6;
 
 }
 
