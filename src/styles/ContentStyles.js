@@ -39,4 +39,14 @@ export const ContentStyles = styled.div`
     border-left: 2px solid #bebebe;
     padding-left: 2rem;
   }
+
+  p,
+  ul,
+  ol,
+  blockquote,
+  img,
+  code {
+    margin: 1.5rem 0;
+    line-height: 1.5;
+  }
 `;
