@@ -28,9 +28,9 @@ collections:
           options: ["Home"],
         }
       - { label: "Body", name: "body", widget: "markdown" }
-  - name: "articles"
-    label: "Articles"
-    folder: "src/content/articles"
+  - name: "css"
+    label: "CSS"
+    folder: "src/content/css"
     create: true
     slug: "index"
     media_folder: ""
@@ -47,6 +47,72 @@ collections:
           label: "Category",
           name: "category",
           widget: "select",
-          options: ["First", "Second"],
+          options: ["CSS"],
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "design"
+    label: "Design"
+    folder: "src/content/design"
+    create: true
+    slug: "index"
+    media_folder: ""
+    public_folder: ""
+    path: "{{title}}/index"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Path", name: "path", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "string" }
+      - {
+          label: "Category",
+          name: "category",
+          widget: "select",
+          options: ["Design"],
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "javascript"
+    label: "JavaScript"
+    folder: "src/content/javascript"
+    create: true
+    slug: "index"
+    media_folder: ""
+    public_folder: ""
+    path: "{{title}}/index"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Path", name: "path", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "string" }
+      - {
+          label: "Category",
+          name: "category",
+          widget: "select",
+          options: ["JavaScript"],
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "tools"
+    label: "Tools"
+    folder: "src/content/tools"
+    create: true
+    slug: "index"
+    media_folder: ""
+    public_folder: ""
+    path: "{{title}}/index"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Path", name: "path", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "string" }
+      - {
+          label: "Category",
+          name: "category",
+          widget: "select",
+          options: ["Tools"],
         }
       - { label: "Body", name: "body", widget: "markdown" }

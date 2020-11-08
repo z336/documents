@@ -69,21 +69,29 @@ const Menu = ({ open, setOpen }) => {
 
   const { edges: articles } = data.allMarkdownRemark;
 
-  const first = articles.filter(
-    article => article.node.frontmatter.category === "First"
+  const css = articles.filter(
+    article => article.node.frontmatter.category === "CSS"
   );
 
-  const second = articles.filter(
-    article => article.node.frontmatter.category === "Second"
+  const design = articles.filter(
+    article => article.node.frontmatter.category === "Design"
+  );
+
+  const javascript = articles.filter(
+    article => article.node.frontmatter.category === "JavaScript"
+  );
+
+  const tools = articles.filter(
+    article => article.node.frontmatter.category === "Tools"
   );
 
   return (
     <MenuContainer open={open}>
       <MenuItems>
         <li>
-          <Collapsible trigger={<h2>First</h2>} transitionTime={50}>
+          <Collapsible trigger={<h2>CSS</h2>} transitionTime={50}>
             <ul>
-              {first.map(({ node: article }) => {
+              {css.map(({ node: article }) => {
                 return (
                   <li key={article.id}>
                     <Link
@@ -100,9 +108,47 @@ const Menu = ({ open, setOpen }) => {
           </Collapsible>
         </li>
         <li>
-          <Collapsible trigger={<h2>Second</h2>} transitionTime={50}>
+          <Collapsible trigger={<h2>Design</h2>} transitionTime={50}>
             <ul>
-              {second.map(({ node: article }) => {
+              {design.map(({ node: article }) => {
+                return (
+                  <li key={article.id}>
+                    <Link
+                      to={article.frontmatter.path}
+                      activeClassName="is-active"
+                      onClick={() => setOpen(!open)}
+                    >
+                      {article.frontmatter.title}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </Collapsible>
+        </li>
+        <li>
+          <Collapsible trigger={<h2>JavaScript</h2>} transitionTime={50}>
+            <ul>
+              {javascript.map(({ node: article }) => {
+                return (
+                  <li key={article.id}>
+                    <Link
+                      to={article.frontmatter.path}
+                      activeClassName="is-active"
+                      onClick={() => setOpen(!open)}
+                    >
+                      {article.frontmatter.title}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </Collapsible>
+        </li>
+        <li>
+          <Collapsible trigger={<h2>Tools</h2>} transitionTime={50}>
+            <ul>
+              {tools.map(({ node: article }) => {
                 return (
                   <li key={article.id}>
                     <Link

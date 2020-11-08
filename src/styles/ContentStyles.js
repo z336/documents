@@ -3,11 +3,11 @@ import styled from "styled-components";
 export const ContentContainer = styled.div`
   max-width: 70rem;
   padding: 2rem;
-  @media (min-width: 1600px) {
+  @media (min-width: 1450px) {
     margin: 7rem auto 0 auto;
     padding: 5rem 6rem;
   }
-  @media (min-width: 800px) and (max-width: 1600px) {
+  @media (min-width: 801px) and (max-width: 1450px) {
     margin: 7rem 0 0 30rem;
     padding: 5rem 6rem;
   }
