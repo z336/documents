@@ -6,6 +6,8 @@ import styled from "styled-components";
 const MenuContainer = styled.div`
   background: var(--mid);
   color: var(--white);
+  border-right: 1px solid var(--border);
+  border-top: 1px solid var(--border);
   margin-top: 7rem;
   height: 100vh;
   width: 30rem;
@@ -24,14 +26,14 @@ const MenuItems = styled.ul`
   flex-direction: column;
   padding: 2rem;
   a.is-active {
-    color: var(--bright);
+    color: var(--link);
   }
   a,
   h2 {
     color: var(--white);
     transition: color 0.2s ease-out 0s;
     &:hover {
-      color: var(--bright);
+      color: var(--link);
       cursor: pointer;
     }
   }

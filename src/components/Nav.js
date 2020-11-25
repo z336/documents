@@ -6,6 +6,7 @@ const NavStyles = styled.div`
   display: flex;
   background: var(--dark);
   color: var(--white);
+  border-bottom: 1px solid var(--border);
   height: 7rem;
   position: fixed;
   z-index: 1;

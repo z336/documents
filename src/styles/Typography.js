@@ -31,10 +31,11 @@ const Typography = createGlobalStyle`
   }
 
   a {
-    color: var(--link);
+    color: var(--white);
     text-decoration: none;
+    transition: color 0.2s ease-out 0s;
     &:hover {
-        color: var(--hover);
+        color: var(--link);
     }
   }
 

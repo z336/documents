@@ -5,10 +5,9 @@ const GlobalStyles = createGlobalStyle`
     --dark: #000000;
     --mid: #191919;
     --light: #212424;
-    --bright: #f7f914;
     --white: #FFFFFF;
-    --link: #51FA7B;
-    --hover: #ff79c6;
+    --link: #056FFA;
+    --border: #4b4b4b;
 
 }
 

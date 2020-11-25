@@ -36,7 +36,7 @@ export const ContentStyles = styled.div`
   }
 
   blockquote {
-    border-left: 2px solid #bebebe;
+    border-left: 2px solid var(--border);
     padding-left: 2rem;
   }
 
