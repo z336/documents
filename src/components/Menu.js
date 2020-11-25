@@ -13,7 +13,7 @@ const MenuContainer = styled.div`
   z-index: 1;
   top: 0;
   left: 0;
-  @media (max-width: 800px) {
+  @media (max-width: 1100px) {
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
     transition: 0.25s ease-in-out;
   }
@@ -42,7 +42,7 @@ const MenuItems = styled.ul`
   ul > li:first-child {
     padding-top: 2rem;
   }
-  @media (min-width: 800px) {
+  @media (min-width: 1100px) {
     padding-top: 5rem;
   }
 `;

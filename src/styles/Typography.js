@@ -1,27 +1,26 @@
 import { createGlobalStyle } from "styled-components";
 
-import fontHeader from "../assets/fonts/WorkSans-VariableFont_wght.ttf";
-import fontBody from "../assets/fonts/Inconsolata-VariableFont_wdth,wght.ttf";
+import fontHeader from "../assets/fonts/Poppins-SemiBold.ttf";
+import fontBody from "../assets/fonts/RobotoSlab-VariableFont_wght.ttf";
 
 const Typography = createGlobalStyle`
   @font-face {
-    font-family: WorkSans;
-    font-weight: 700;
+    font-family: Poppins;
     src: url(${fontHeader});
   }
 
   @font-face {
-    font-family: Inconsolata;
+    font-family: RobotoSlab;
     src: url(${fontBody});
   }
 
   html {
-    font-family: Inconsolata, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: RobotoSlab, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: var(--white);
   }
 
   h1 {
-    font-family: WorkSans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: normal;
     margin: 0;
   }

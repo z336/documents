@@ -7,12 +7,12 @@ export const ContentContainer = styled.div`
     margin: 7rem auto 0 auto;
     padding: 5rem 6rem;
   }
-  @media (min-width: 801px) and (max-width: 1450px) {
+  @media (min-width: 1101px) and (max-width: 1450px) {
     margin: 7rem 0 0 30rem;
     padding: 5rem 6rem;
   }
-  @media (max-width: 800px) {
-    margin-top: 7rem;
+  @media (max-width: 1100px) {
+    margin: 7rem auto 0 auto;
   }
 `;
 
@@ -47,6 +47,6 @@ export const ContentStyles = styled.div`
   img,
   code {
     margin: 1.5rem 0;
-    line-height: 1.5;
+    line-height: 2;
   }
 `;

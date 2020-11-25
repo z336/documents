@@ -26,10 +26,10 @@ const NavStyles = styled.div`
 `;
 
 const MobileButton = styled.button`
-  @media (min-width: 800px) {
+  @media (min-width: 1100px) {
     display: none;
   }
-  @media (max-width: 800px) {
+  @media (max-width: 1100px) {
     position: absolute;
     top: 2.75rem;
     right: 2rem;
